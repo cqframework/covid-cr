@@ -1,2 +1,3 @@
 # covid-cr
-Covid Case Reporting Project
+
+Implementation Guide for COVID Case Reporting

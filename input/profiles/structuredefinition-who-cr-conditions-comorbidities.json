@@ -1,0 +1,32 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-cr-conditions-comorbidities",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-conditions-comorbidities",
+  "name": "WHO-CR Conditions (Comorbidities)",
+  "title": "WHO-CR Conditions (Comorbidities)",
+  "status": "draft",
+  "experimental": false,
+  "description": "other underlying condition, comorbidity",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition",
+        "mustSupport": false
+      },
+      {
+        "id": "Condition.note",
+        "path": "Condition.note",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      }
+    ]
+  }
+}

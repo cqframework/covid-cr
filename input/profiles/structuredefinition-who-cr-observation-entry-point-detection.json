@@ -1,0 +1,83 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-cr-observation-entry-point-detection",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-observation-entry-point-detection",
+  "name": "WHO-CR Observation (Entry Point Detection)",
+  "title": "WHO-CR Observation (Entry Point Detection)",
+  "status": "draft",
+  "experimental": false,
+  "description": "What date was the case detected at a point of entry",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "min": 1,
+        "max": "1",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/ciel",
+              "code": "165651",
+              "display": "detected at point of entry (CIEL)"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "code": [
+          {
+            "system": "http://hl7.org/fhir/sid/ciel",
+            "code": "162869",
+            "display": "date detected at point of entry (CIEL)"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
+        "code": [
+          {
+            "system": "http://hl7.org/fhir/sid/ciel",
+            "code": "165651",
+            "display": "detected at point of entry (CIEL)"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.org/guides/cqframework/cr/ValueSet/yesnounk-values"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-cr-observation-ventelation",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-observation-ventelation",
+  "name": "WHO-CR Observation (ventelation)",
+  "title": "WHO-CR Observation (ventelation)",
+  "status": "draft",
+  "experimental": false,
+  "description": "Was the patient ever ventilated for this episode at time of reporting?",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "min": 1,
+        "max": "1",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/ciel",
+              "code": "165647",
+              "display": "Was the patient ventilated? (CIEL)"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueBoolean",
+        "path": "Observation.valueBoolean",
+        "code": [
+          {
+            "system": "http://hl7.org/fhir/sid/ciel",
+            "code": "165647",
+            "display": "Was the patient ventilated? (CIEL)"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

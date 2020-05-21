@@ -1,0 +1,11 @@
+{
+  "resourceType": "ValueSet",
+  "id": "pregnancystatus-values",
+  "url": "http://fhir.org/guides/cqframework/cr/ValueSet/pregnancystatus-values",
+  "name": "pregnancystatus-values",
+  "title": "Pregnancy Status values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Pregnancy Status element",
+  "immutable": true
+}

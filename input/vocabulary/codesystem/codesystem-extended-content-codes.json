@@ -1,0 +1,12 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "extended-content-codes",
+  "url": "http://who.int/cg/CodeSystem/extended-content-codes",
+  "name": "extended-content_codes",
+  "title": "Extended Codes CodeSystem codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Set of codes identified as being needed but not found in existing Code Systems",
+  "caseSensitive": true,
+  "content": "complete"
+}

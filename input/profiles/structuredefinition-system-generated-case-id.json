@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "system-generated-case-id",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/system-generated-case-id",
+  "name": "System Generated Case ID",
+  "title": "System Generated Case ID",
+  "status": "draft",
+  "experimental": false,
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Communication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Communication",
+        "path": "Communication",
+        "mustSupport": false
+      },
+      {
+        "id": "Communication.identifier",
+        "path": "Communication.identifier",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      }
+    ]
+  }
+}

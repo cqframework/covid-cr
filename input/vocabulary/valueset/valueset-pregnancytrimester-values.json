@@ -1,0 +1,11 @@
+{
+  "resourceType": "ValueSet",
+  "id": "pregnancytrimester-values",
+  "url": "http://fhir.org/guides/cqframework/cr/ValueSet/pregnancytrimester-values",
+  "name": "pregnancytrimester-values",
+  "title": "Trimester of pregancy values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Trimester of pregancy element",
+  "immutable": true
+}

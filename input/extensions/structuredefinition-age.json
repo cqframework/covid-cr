@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "age",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/age",
+  "name": "age",
+  "title": "Age",
+  "status": "draft",
+  "experimental": false,
+  "description": "Age in units on the date of illness onset.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "Age in units on the date of illness onset.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.org/guides/cqframework/cr/StructureDefinition/age"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Age",
+        "definition": "Age in units on the date of illness onset.",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      }
+    ]
+  }
+}

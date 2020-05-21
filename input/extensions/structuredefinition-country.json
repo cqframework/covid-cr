@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "country",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/country",
+  "name": "country",
+  "title": "Specify country of travel",
+  "status": "draft",
+  "experimental": false,
+  "description": "List the country from location 1 that the case has travelled to in the 14 days prior to symptom onset",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Observation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "List the country from location 1 that the case has travelled to in the 14 days prior to symptom onset",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://fhir.org/guides/cqframework/cr/StructureDefinition/country"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Specify country of travel",
+        "definition": "List the country from location 1 that the case has travelled to in the 14 days prior to symptom onset",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}
