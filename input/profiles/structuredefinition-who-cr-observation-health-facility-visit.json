@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "who-cr-observation-isolation",
-  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-observation-isolation",
-  "name": "WHO-CR Observation (isolation)",
-  "title": "WHO-CR Observation (isolation)",
+  "id": "who-cr-observation-health-facility-visit",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-observation-health-facility-visit",
+  "name": "WHO-CR Observation (Health Facility Visit)",
+  "title": "WHO-CR Observation (Health Facility Visit)",
   "status": "draft",
   "experimental": false,
-  "description": "Was the case isolated with proper IPC controls implemented?",
+  "description": "Has the patient visited any health care facilities in the 14 days prior to symptom onset",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -29,30 +29,11 @@
           "coding": [
             {
               "system": "http://hl7.org/fhir/sid/ciel",
-              "code": "165795",
-              "display": "Was the case isolated? (CIEL)"
+              "code": "165833",
+              "display": "Has the patient visited any health care facilities in the 14 days prior to symptom onset (CIEL)"
             }
           ]
         },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.effectivePeriod",
-        "path": "Observation.effectivePeriod",
-        "code": [
-          {
-            "system": "http://hl7.org/fhir/sid/ciel",
-            "code": "165648",
-            "display": "date of isolation (CIEL)"
-          }
-        ],
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Period"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -61,8 +42,8 @@
         "code": [
           {
             "system": "http://hl7.org/fhir/sid/ciel",
-            "code": "165795",
-            "display": "Was the case isolated? (CIEL)"
+            "code": "165833",
+            "display": "Has the patient visited any health care facilities in the 14 days prior to symptom onset (CIEL)"
           }
         ],
         "min": 0,

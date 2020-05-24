@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-cr-organization-health-workers-organization",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-organization-health-workers-organization",
+  "name": "WHO-CR Organization (health workers organization)",
+  "title": "WHO-CR Organization (health workers organization)",
+  "status": "draft",
+  "experimental": false,
+  "description": "If case is a healthcare worker, in which country do they work?",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization",
+        "path": "Organization",
+        "mustSupport": false
+      },
+      {
+        "id": "Organization.Address.city",
+        "path": "Organization.Address.city",
+        "code": [
+          {
+            "system": "http://hl7.org/fhir/sid/ciel",
+            "code": "165654",
+            "display": "Healthcare worker's organization city (CIEL)"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.Address.country",
+        "path": "Organization.Address.country",
+        "code": [
+          {
+            "system": "http://hl7.org/fhir/sid/ciel",
+            "code": "165655",
+            "display": "Healthcare worker's organization country (CIEL)"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-cr-observation-labratory-confirmation",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-observation-labratory-confirmation",
+  "name": "WHO-CR Observation (Labratory Confirmation)",
+  "title": "WHO-CR Observation (Labratory Confirmation)",
+  "status": "draft",
+  "experimental": false,
+  "description": "Date of first laboratory confirmation",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

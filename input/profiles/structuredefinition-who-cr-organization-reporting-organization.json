@@ -1,0 +1,46 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-cr-organization-reporting-organization",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-organization-reporting-organization",
+  "name": "WHO-CR Organization (reporting organization)",
+  "title": "WHO-CR Organization (reporting organization)",
+  "status": "draft",
+  "experimental": false,
+  "description": "Facility  ? Include. MFR ID",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization",
+        "path": "Organization",
+        "mustSupport": false
+      },
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "code": [
+          {
+            "system": "http://hl7.org/fhir/sid/ciel",
+            "code": "165846",
+            "display": "reporting institution (CIEL)"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.telecom",
+        "path": "Organization.telecom",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      }
+    ]
+  }
+}

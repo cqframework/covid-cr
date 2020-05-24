@@ -1,0 +1,49 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-cr-observation-contact-followups",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-observation-contact-followups",
+  "name": "WHO-CR Observation (Contact Followups)",
+  "title": "WHO-CR Observation (Contact Followups)",
+  "status": "draft",
+  "experimental": false,
+  "description": "Total number of  contacts followed for this case",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueString",
+        "path": "Observation.valueString",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-cr-conditions-symptoms",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-conditions-symptoms",
+  "name": "WHO-CR Conditions (Symptoms)",
+  "title": "WHO-CR Conditions (Symptoms)",
+  "status": "draft",
+  "experimental": false,
+  "description": "Is the date of the case's symptom onset unknown?",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition",
+        "mustSupport": false
+      },
+      {
+        "id": "Condition.onsetDateTime",
+        "path": "Condition.onsetDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.onsetString",
+        "path": "Condition.onsetString",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

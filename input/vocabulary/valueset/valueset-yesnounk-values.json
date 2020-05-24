@@ -3,9 +3,9 @@
   "id": "yesnounk-values",
   "url": "http://fhir.org/guides/cqframework/cr/ValueSet/yesnounk-values",
   "name": "yesnounk-values",
-  "title": "Patient asymptomatic at time of speciment collection values",
+  "title": "Has the patient travelled in the 14 days prior to symptom onset? values",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the Patient asymptomatic at time of speciment collection element",
+  "description": "Codes representing possible values for the Has the patient travelled in the 14 days prior to symptom onset? element",
   "immutable": true
 }

@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "who-cr-observation-health-worker",
-  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-observation-health-worker",
-  "name": "WHO-CR Observation (health worker)",
-  "title": "WHO-CR Observation (health worker)",
+  "id": "who-cr-observation-symptoms",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-observation-symptoms",
+  "name": "WHO-CR Observation (Symptoms)",
+  "title": "WHO-CR Observation (Symptoms)",
   "status": "draft",
   "experimental": false,
-  "description": "Is case a healthcare worker in  any setting",
+  "description": "If case was asymptomatic and developed symptoms, what is the date of onset for symptoms/signs of illness",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -21,6 +21,18 @@
         "mustSupport": false
       },
       {
+        "id": "Observation.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Observation.valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "min": 0,
@@ -30,11 +42,7 @@
             "code": "CodeableConcept"
           }
         ],
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://fhir.org/guides/cqframework/cr/ValueSet/yesnounk-values"
-        }
+        "mustSupport": true
       }
     ]
   }

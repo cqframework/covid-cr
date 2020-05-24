@@ -6,7 +6,7 @@
   "title": "WHO-CR Observation (Entry Point Detection)",
   "status": "draft",
   "experimental": false,
-  "description": "What date was the case detected at a point of entry",
+  "description": "Was the case detected at a point of entry?",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

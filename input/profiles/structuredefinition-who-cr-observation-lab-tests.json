@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-cr-observation-lab-tests",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-observation-lab-tests",
+  "name": "WHO-CR Observation (Lab Tests)",
+  "title": "WHO-CR Observation (Lab Tests)",
+  "status": "draft",
+  "experimental": false,
+  "description": "If released from hospital /isolation, date of last laboratory test",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

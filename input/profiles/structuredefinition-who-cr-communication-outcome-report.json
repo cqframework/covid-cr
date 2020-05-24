@@ -1,0 +1,32 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-cr-communication-outcome-report",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/who-cr-communication-outcome-report",
+  "name": "WHO-CR Communication (Outcome Report)",
+  "title": "WHO-CR Communication (Outcome Report)",
+  "status": "draft",
+  "experimental": false,
+  "description": "Date of outcome submission",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Communication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Communication",
+        "path": "Communication",
+        "mustSupport": false
+      },
+      {
+        "id": "Communication.sent",
+        "path": "Communication.sent",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "city",
-  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/city",
-  "name": "city]",
-  "title": "Specify city of travel",
+  "id": "contactsetting",
+  "url": "http://fhir.org/guides/cqframework/cr/StructureDefinition/contactsetting",
+  "name": "contactSetting",
+  "title": "Explain contact setting",
   "status": "draft",
   "experimental": false,
-  "description": "List the city from location 1 that the case has travelled to in the 14 days prior to symptom onset",
+  "description": "If the patient has had contact with a confirmed case in the 14 days prior to symptom onset, explain contact setting",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -24,7 +24,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "List the city from location 1 that the case has travelled to in the 14 days prior to symptom onset",
+        "definition": "If the patient has had contact with a confirmed case in the 14 days prior to symptom onset, explain contact setting",
         "min": 0,
         "max": "1"
       },
@@ -37,13 +37,13 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://fhir.org/guides/cqframework/cr/StructureDefinition/city"
+        "fixedUri": "http://fhir.org/guides/cqframework/cr/StructureDefinition/contactsetting"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "short": "Specify city of travel",
-        "definition": "List the city from location 1 that the case has travelled to in the 14 days prior to symptom onset",
+        "short": "Explain contact setting",
+        "definition": "If the patient has had contact with a confirmed case in the 14 days prior to symptom onset, explain contact setting",
         "min": 1,
         "type": [
           {
