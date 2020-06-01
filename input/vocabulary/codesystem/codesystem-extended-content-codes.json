@@ -8,5 +8,57 @@
   "experimental": false,
   "description": "Set of codes identified as being needed but not found in existing Code Systems",
   "caseSensitive": true,
-  "content": "complete"
+  "content": "complete",
+  "concept": [
+    {
+      "code": "case_contact",
+      "display": "case_contact",
+      "definition": "case_contact"
+    },
+    {
+      "code": "seeking_hc",
+      "display": "seeking_hc",
+      "definition": "seeking_hc"
+    },
+    {
+      "code": "poe_detection",
+      "display": "poe_detection",
+      "definition": "poe_detection"
+    },
+    {
+      "code": "repatriation",
+      "display": "repatriation",
+      "definition": "repatriation"
+    },
+    {
+      "code": "survelliance",
+      "display": "survelliance",
+      "definition": "survelliance"
+    },
+    {
+      "code": "unknown",
+      "display": "unknown",
+      "definition": "unknown"
+    },
+    {
+      "code": "other",
+      "display": "other",
+      "definition": "other"
+    },
+    {
+      "code": "confirmed",
+      "display": "confirmed",
+      "definition": "confirmed"
+    },
+    {
+      "code": "probable",
+      "display": "probable",
+      "definition": "probable"
+    },
+    {
+      "code": "suspected",
+      "display": "suspected",
+      "definition": "suspected"
+    }
+  ]
 }

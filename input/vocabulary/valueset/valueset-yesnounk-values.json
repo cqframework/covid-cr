@@ -7,5 +7,26 @@
   "status": "draft",
   "experimental": false,
   "description": "Codes representing possible values for the Has the patient travelled in the 14 days prior to symptom onset? element",
-  "immutable": true
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/ciel",
+        "concept": [
+          {
+            "code": "1065",
+            "display": "yes"
+          },
+          {
+            "code": "1066",
+            "display": "no"
+          },
+          {
+            "code": "1067",
+            "display": "unknown"
+          }
+        ]
+      }
+    ]
+  }
 }

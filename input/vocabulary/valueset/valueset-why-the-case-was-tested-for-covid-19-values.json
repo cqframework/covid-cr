@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "why-the-case-was-tested-for-covid-19-values",
+  "url": "http://fhir.org/guides/cqframework/cr/ValueSet/why-the-case-was-tested-for-covid-19-values",
+  "name": "why-the-case-was-tested-for-covid-19-values",
+  "title": "Why the case was tested for COVID-19 values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Why the case was tested for COVID-19 element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "case_contact",
+            "display": "case_contact"
+          },
+          {
+            "code": "seeking_hc",
+            "display": "seeking_hc"
+          },
+          {
+            "code": "poe_detection",
+            "display": "poe_detection"
+          },
+          {
+            "code": "repatriation",
+            "display": "repatriation"
+          },
+          {
+            "code": "survelliance",
+            "display": "survelliance"
+          },
+          {
+            "code": "unknown",
+            "display": "unknown"
+          },
+          {
+            "code": "other",
+            "display": "other"
+          }
+        ]
+      }
+    ]
+  }
+}

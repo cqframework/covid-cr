@@ -38,13 +38,6 @@
       {
         "id": "Observation.valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
-        "code": [
-          {
-            "system": "http://hl7.org/fhir/sid/ciel",
-            "code": "160665",
-            "display": "Trimester of pregancy (CIEL)"
-          }
-        ],
         "min": 0,
         "max": "1",
         "type": [

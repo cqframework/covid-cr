@@ -7,5 +7,43 @@
   "status": "draft",
   "experimental": false,
   "description": "Codes representing possible values for the Trimester of pregancy element",
-  "immutable": true
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/ciel",
+        "concept": [
+          {
+            "code": "1721",
+            "display": "First Trimester"
+          },
+          {
+            "code": "1722",
+            "display": "Second Trimester"
+          },
+          {
+            "code": "1723",
+            "display": "Third Trimester"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10",
+        "concept": [
+          {
+            "code": "Z34.91",
+            "display": "First Trimester"
+          },
+          {
+            "code": "Z34.92",
+            "display": "Second Trimester"
+          },
+          {
+            "code": "Z34.83",
+            "display": "Third Trimester"
+          }
+        ]
+      }
+    ]
+  }
 }

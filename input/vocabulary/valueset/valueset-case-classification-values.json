@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "case-classification-values",
+  "url": "http://fhir.org/guides/cqframework/cr/ValueSet/case-classification-values",
+  "name": "case-classification-values",
+  "title": "case classification values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the case classification element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "confirmed",
+            "display": "confirmed"
+          },
+          {
+            "code": "probable",
+            "display": "probable"
+          },
+          {
+            "code": "suspected",
+            "display": "suspected"
+          }
+        ]
+      }
+    ]
+  }
+}
